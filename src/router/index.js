@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import HelloWorld from '@/components/HelloWorld'
-import MyVue from '@/components/MyVue'
+import FrontPage from '@/components/FrontPage'
+import DetailPage from '@/components/DetailPage'
 
 Vue.use(Router)
 
@@ -10,13 +10,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'FrontPage',
+      component: FrontPage
     },
     {
       path: '/:userId',
-      name: 'MyVue',
-      component: MyVue
+      name: 'DetailPage',
+      component: DetailPage
     }
   ]
 })
